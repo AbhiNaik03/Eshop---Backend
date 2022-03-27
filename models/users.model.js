@@ -9,7 +9,8 @@ const userSchema = new mongoose.Schema({
     phone_number: Number,
     role: String,
     updatedAt: Date,
-    user_name: String
+    user_name: String,
+    token: String
 });
 
 const users = mongoose.model("users", userSchema)

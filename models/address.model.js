@@ -8,6 +8,8 @@ const addressSchema = new mongoose.Schema({
     contactNumber: String,
     landmark: String,
     zipCode: Number,
+    createdAt: Date,
+    updatedAt: Date,
     user: Object
 });
 
