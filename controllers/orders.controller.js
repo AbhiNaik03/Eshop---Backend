@@ -48,7 +48,7 @@ const createOrder = async (req, res) => {
         quantity: quantity,
         user: userData[0]._id
     }).then((data) => {
-        res.status(200).send(data);
+        res.status(200).send({"data":data, "status":"success"});
     }).catch((err) => {
         res.status(401).send(err);
     })
